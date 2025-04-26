@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #fafafa;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cabecalho-conteudo {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    align-items: center; 
+    justify-content: center;
+      
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    max-height: 350px;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    margin: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00796b;
+}
+
+main.vitrine {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    flex: 1 1 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produto h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.preco {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00796b;
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    margin: 0 1rem 1.5rem 1rem;
+    color: #666;
+}
+
+.rodape {
+    background-color: #fafafa;
+    padding: 3rem 1rem;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 4rem;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.rodape .creditos {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .cabecalho-conteudo {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
