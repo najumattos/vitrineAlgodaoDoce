@@ -72,7 +72,7 @@ h1 {
     font-weight: 600;
 }
 
-.produtos {
+#produtosContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -80,7 +80,7 @@ h1 {
     cursor: pointer;
 }
 
-.produto {
+.card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -90,17 +90,17 @@ h1 {
     transition: box-shadow 0.3s ease;
 }
 
-.produto:hover {
+.card:hover {
     box-shadow: 0 4px 10px #287cca;
 }
 
-.produto img {
+.card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.produto h2 {
+.card h2 {
     font-size: 1.2rem;
     margin: 1rem;
 }
@@ -111,14 +111,7 @@ h1 {
     color: #003f79;
     margin: 0 1rem 0.5rem 1rem;
 }
-.tamanhos{
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 1rem 0.5rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+
 .tamanho{
     border: 2px solid #003f79;
     color: #003f79;
@@ -126,16 +119,6 @@ h1 {
     width: 28px;
     height: 28px;
     margin: 5px;
-}
-
-.esgotado{
-    border: 2px solid #003f79;
-    color: #003f79;
-    background-color: #c2c2c2;
-}
-
-.esgotado:hover{
-    cursor: not-allowed;
 }
 
 .descricao {
